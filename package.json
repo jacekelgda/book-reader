@@ -1,11 +1,31 @@
 {
   "name": "assignment",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "book-reader",
+  "main": "src/fileParser.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --detectOpenHandles --maxWorkers=1 --bail"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "JRL",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.3.14",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.0",
+    "jest": "^23.6.0",
+    "mongodb-memory-server": "^2.7.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true
+  }
 }
